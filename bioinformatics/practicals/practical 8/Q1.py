@@ -1,7 +1,9 @@
 __author__ = 'dileep'
 # Amino Acid composition
 def amino_comp(seq):
-	"""Calculating amino acid composition"""
+	"""Calculating amino acid composition
+	:rtype : list
+	"""
 	seq_len = len(seq)
 	amino_acids = list(set('FLSYCWLPHQRIMTNKSRVADEG'))
 	amino_acids.sort()
@@ -18,3 +20,7 @@ def amino_comp(seq):
 if __name__ == '__main__':
 	print(amino_comp(
 		'MALLPAAPGAPARATPTRWPVGCFNRPWTKWSYDEALDGIKAAGYAWTGLLTASKPLHHATATPEYLAALKQKSRHAA'))
+	print(amino_comp(
+		'AMENLNMDLLYMAAAVMMGLAAIGAAIGIGILGGKFLEGAARQPDLIPLLRTQFFIVMGLVDAIPMIAVGLGLYVMFAVA'))
+	print(amino_comp(
+		'AADVSAAVGATGQSGMTYRLGLSWDWDKSWWQTSTGRLTGYWDAGYWDAGYTYWEGGDEGAGKHSLSFAPVFVYEFAGDSIKPFIEAGIGVAASGTRVGDQNLGSSLNFEDRIGAGLKFANGQSVGVRAIHYSNAGLKQPNDGIESYSLFYKIPI'))
