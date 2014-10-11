@@ -1,0 +1,30 @@
+
+1. Find the names (column 1) and scores (column 6) in test4.dat
+2. Obtain the lines, in which the first field ends with TLE in a PDB file (test2.dat)
+3. Get the data from DSSP output (test3.dat) by deleting the details given at the beginning (test3.dat)
+4. Sum up the numbers in each line in test5.dat
+5. List the HELIX records in a PDB file (test2.dat)
+6. Obtain the codes, which have data at the beginning of the proteins (less than 50 residues):
+column 2 in test4.dat
+7. List the lines, which starts with HET in a PDB file (test2.dat)
+8. Summing up all numbers in column 6 (test4.dat)
+9. Count the total number of lines in test4.dat.
+10. Helical segments not ending with the residue, THR (test2.dat)
+11. Substitute ATOM by PROTEIN in test6.dat
+12. Replace the fields in ATOM records of CYS residues with absolute value (test6.dat)
+13. Retrieve the data, which are given between "--" and "--" (use field separator) in test1.dat
+14. Get the atoms of A chain in a PDB file (test2.dat)
+15. Include numbers in each line of the score results (test4.dat) with tab
+16. Get the records with ATOM and HETATM (test2.dat)
+17. Delete 3rd field in test9.dat and write the answer in order 
+(4 character for integer, 5 for string, 10 for decimal with 3 decimal points)
+18. Print the last field of each line (test6.dat)
+19. Find the sum of X, Y and Z coordinates for each atom in CYS residue;  (test2.dat)
+write the residue name, atom name and result in order (5 strings and 10 decimals)
+20. Remove the duplicate lines in the data file (test8.dat)
+21. Print first 10 lines in a PDB file (test2.dat)
+22. Obtain the coordinates of C (test2.dat)
+23. Delete empty lines from output data (test1.dat) 
+24. Find the atoms with residue number 13 in test2.dat
+
+Input files are available in the directory "questions"
