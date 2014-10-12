@@ -1,6 +1,7 @@
 __author__ = 'dileep'
 # Hydrophobicity profile
 def hydrophobicity(seq):
+	import matplotlib.pyplot as plt
 	"""Determining the hydrophobicity profile"""
 	hydro_dict = {'A': 13.85, 'D': 11.61, 'C': 15.37, 'E': 11.38, 'F': 13.93,
                   'G': 13.34, 'H': 13.82, 'I': 15.28, 'K': 11.58, 'L': 14.13,
@@ -9,12 +10,17 @@ def hydrophobicity(seq):
 	hyd_pro = []
 	for res in seq:
 		hyd_pro += [hydro_dict[res]]
-	return hyd_pro
+	fig = plt.figure()
+	ax = fig.add_subplot(111)
+	x_points = range(len(seq))
+	p = ax.plot(x_points, hyd_pro, 'b')
+	fig.show()
+	return fig.show()
 
 if __name__ == '__main__':
 	print(hydrophobicity(
 		'MALLPAAPGAPARATPTRWPVGCFNRPWTKWSYDEALDGIKAAGYAWTGLLTASKPLHHATATPEYLAALKQKSRHAA'))
-	print(hydrophobicity(
-		'AMENLNMDLLYMAAAVMMGLAAIGAAIGIGILGGKFLEGAARQPDLIPLLRTQFFIVMGLVDAIPMIAVGLGLYVMFAVA'))
-	print(hydrophobicity(
-		'AADVSAAVGATGQSGMTYRLGLSWDWDKSWWQTSTGRLTGYWDAGYWDAGYTYWEGGDEGAGKHSLSFAPVFVYEFAGDSIKPFIEAGIGVAASGTRVGDQNLGSSLNFEDRIGAGLKFANGQSVGVRAIHYSNAGLKQPNDGIESYSLFYKIPI'))
+	# print(hydrophobicity(
+	# 	'AMENLNMDLLYMAAAVMMGLAAIGAAIGIGILGGKFLEGAARQPDLIPLLRTQFFIVMGLVDAIPMIAVGLGLYVMFAVA'))
+	# print(hydrophobicity(
+	# 	'AADVSAAVGATGQSGMTYRLGLSWDWDKSWWQTSTGRLTGYWDAGYWDAGYTYWEGGDEGAGKHSLSFAPVFVYEFAGDSIKPFIEAGIGVAASGTRVGDQNLGSSLNFEDRIGAGLKFANGQSVGVRAIHYSNAGLKQPNDGIESYSLFYKIPI'))
